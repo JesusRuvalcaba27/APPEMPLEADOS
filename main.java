@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Empleado empleado1 = new Empleado("Antonio", "Desarrollador", 12000);
-        Empleado empleado2 = new Empleado("Ana", "Diseñadora", 11000);
-        Empleado empleado3 = new Empleado("Luis", "Analista", 9500);
+        // Crear objetos de cada subclase
+        Desarrollador dev = new Desarrollador("Antonio", 12000, "Java");
+        Diseñador dis = new Diseñador("Ana", 11000, "Adobe Photoshop");
+        Analista analista = new Analista("Luis", 9500, "Mercado Financiero");
 
-        System.out.println("Lista de empleados:\n");
+        System.out.println("Lista de empleados con información detallada:\n");
 
-        empleado1.mostrarInformacion();
-        empleado2.mostrarInformacion();
-        empleado3.mostrarInformacion();
+        dev.mostrarInformacion();
+        dis.mostrarInformacion();
+        analista.mostrarInformacion();
     }
 }
